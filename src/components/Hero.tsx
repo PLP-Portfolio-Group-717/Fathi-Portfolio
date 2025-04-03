@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Download, GitHub, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
             
             <div className="mt-8 flex items-center gap-6">
               <a href="#" className="text-gray-600 hover:text-portfolio-primary transition-colors">
-                <GitHub className="h-6 w-6" />
+                <Github className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-600 hover:text-portfolio-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
