@@ -19,12 +19,473 @@
     
     <!-- Google font for better typography -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Portfolio</a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary">Hire Me</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary mobile-btn">Hire Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2 class="subtitle">Hello, I'm a</h2>
+            <h1 class="title">Student IT Professional</h1>
+            <p class="description">
+              A passionate third-year IT student at KCA University, blending theoretical knowledge with practical skills to create innovative solutions.
+            </p>
+            
+            <div class="buttons">
+              <a href="#projects" class="btn btn-primary">
+                View My Work <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#" class="btn btn-outline">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
+            
+            <div class="social-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <div class="profile-image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Profile">
+            </div>
+            <div class="experience-badge">
+              <p class="badge-title">3+ Years</p>
+              <p class="badge-subtitle">Learning Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="About Me">
+          </div>
+          
+          <div class="about-text">
+            <h3>Student IT Professional</h3>
+            <p>
+              I am a dedicated third-year Information Technology student at KCA University with a passion for solving complex problems through innovative technological solutions. My academic journey has equipped me with a strong foundation in various IT disciplines, from programming and database management to network security and system architecture.
+            </p>
+            
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Name:</span>
+                <span class="info-value">Your Name</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-value">your.email@example.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone:</span>
+                <span class="info-value">+254 700 000000</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location:</span>
+                <span class="info-value">Nairobi, Kenya</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Study:</span>
+                <span class="info-value">KCA University</span>
+              </div>
+            </div>
+            
+            <div class="education">
+              <h3>Education</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>Bachelor of Information Technology</h4>
+                    <p>KCA University (2021 - Present)</p>
+                    <p>Currently pursuing a degree in Information Technology with focus on software development and network security.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>High School Diploma</h4>
+                    <p>Sample High School (2017 - 2020)</p>
+                    <p>Graduated with distinctions in Mathematics, Physics, and Computer Studies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-description">
+          As a third-year IT student, I've developed a diverse skill set through academic coursework, personal projects, and continuous learning.
+        </p>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-globe"></i></div>
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Management</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>SQL Server</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>UI/UX Design</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Responsive Design</li>
+              <li>User Research</li>
+              <li>Wireframing</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Technologies</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile Development</h3>
+            <ul>
+              <li>React Native</li>
+              <li>Flutter</li>
+              <li>Android Development</li>
+              <li>iOS Basics</li>
+              <li>Mobile UI Design</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Cybersecurity</h3>
+            <ul>
+              <li>Network Security</li>
+              <li>Encryption</li>
+              <li>Vulnerability Assessment</li>
+              <li>Security Protocols</li>
+              <li>Ethical Hacking</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Hardware & Networking</h3>
+            <ul>
+              <li>Computer Architecture</li>
+              <li>Network Administration</li>
+              <li>Troubleshooting</li>
+              <li>System Maintenance</li>
+              <li>LAN/WAN Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-description">
+          Here are some of the projects I've worked on during my academic journey and personal learning.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 1">
+            </div>
+            <div class="project-content">
+              <h3>E-Learning Platform</h3>
+              <p>A comprehensive e-learning platform designed for university students to access course materials, submit assignments, and interact with instructors.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 2">
+            </div>
+            <div class="project-content">
+              <h3>Inventory Management System</h3>
+              <p>A robust inventory management system for small businesses to track products, manage stock levels, and generate reports.</p>
+              <div class="project-tech">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 3">
+            </div>
+            <div class="project-content">
+              <h3>Healthcare Mobile App</h3>
+              <p>A mobile application that connects patients with healthcare providers, allows booking appointments, and provides health tracking features.</p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>Node.js</span>
+                <span>Express</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1555421689-491a97ff2f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 4">
+            </div>
+            <div class="project-content">
+              <h3>Network Security Analysis Tool</h3>
+              <p>A tool for analyzing network security vulnerabilities, monitoring traffic, and generating comprehensive security reports.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">
+          Feel free to reach out to me for collaboration, opportunities, or just to say hello!
+        </p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Location</h3>
+                <p>Nairobi, Kenya</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email</h3>
+                <p>your.email@example.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Phone</h3>
+                <p>+254 700 000000</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Education</h3>
+                <p>KCA University</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3 class="footer-title">Portfolio</h3>
+            <p>
+              A passionate IT student at KCA University with a focus on creating innovative solutions through technology.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h3 class="footer-title">Contact Info</h3>
+            <ul>
+              <li>Nairobi, Kenya</li>
+              <li>your.email@example.com</li>
+              <li>+254 700 000000</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© <span id="currentYear"></span> Your Portfolio. All rights reserved.</p>
+          <p>Designed with <span class="heart">❤</span> by a passionate IT student</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
